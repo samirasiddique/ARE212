@@ -1,0 +1,55 @@
+---
+title: "ARE 212- Problem Set 2"
+author: "Samira Siddique"
+date: "March 9, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. Read the data into R. Print out the data. Read it. Plot the series and make sure your data are read in correctly.
+Make sure your data are sorted by size (kwh). [Hint: Check for obvious typos in the data and if you nd any
+x them!]
+
+2. Replicate regression I (page 176) in the paper. (You won't be able to exactly, since the original data contained
+an error that has been xed). Your estimate for the price differences will differ slightly, but the R2 will be the
+same.
+
+3. Conduct the hypothesis test using constant returns to scale (y = 1) as your null hypothesis. What is the p-
+value associated with you test statistic? What is your point estimate of returns to scale? Constant? Increasing?
+Decreasing?
+
+4. Plot the residuals against output. What do you notice? What does this potentially tell you from an economic
+perspective? Compute the correlation coecient of the residuals with output for the entire sample? What does
+this tell you?
+
+5. Nerlove tried to remedy his "residual problem" by running separate models for dierent sized industries. Divide
+your sample into 5 subgroups of 29 rms each according to the level of output. Estimate the regression model
+again for each group separately. Can you replicate Equations IIA - IIIE? Calculate the point estimates for
+returns to scale for each sample. Is there a pattern relating to size of output?
+
+6. Create "dummy variables" for each industry [which you may have done in the previous part]. Interact them with
+the output variable to create ve "slope coecients". Run a model, letting the intercept and slope coecient
+on output dier across plants, but let the remainder of the coeffcients be pooled across plants. Are there any
+noticeable changes in returns to scale from the previous part?
+
+7. Conduct a statistical test comparing the rst model you estimate to the last model you estimated. (Hint: Is
+one model a restricted version of the other?). Would separate t-test have given you the same results?
+
+8. To see whether returns to scale declined with output, Nerlove tested a nonlinear specication by including
+(ln(y))2 as a regressor. Conduct a statistical test you feel is appropriate to test this hypothesis.
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
